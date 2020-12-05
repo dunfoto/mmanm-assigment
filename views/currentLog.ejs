@@ -1,0 +1,57 @@
+<h1 class="mt-4"><a href="/dashboard">Dashboard</a></h1>
+<div class="row">
+    <div class="col-md-6">
+        <p class="lead mb-3">Welcome <%= user.name %></p>
+        <p class="mb-3">Last login: <%= user.lastLogin%></p>
+    </div>
+    <div class="col-md-6 text-right">
+        <a href="/users/logout" class="btn btn-secondary">Logout</a>
+    </div>
+</div>
+
+<ul class="list-group list-group-horizontal">
+    <li class="list-group-item border-0">
+        <a href="/dashboard"
+            class="btn <%= url.includes("/dashboard") ? 'btn-primary' : 'btn-secondary'%>">DashBoard</a>
+    </li>
+    <li class="list-group-item border-0">
+        <a href="/current-log" class="btn <%= url.includes("/current-log") ? 'btn-primary' : 'btn-secondary'%>">Log
+            <%= user.name %></a>
+    </li>
+    <li class="list-group-item border-0">
+        <a href="/log-all" class="btn <%= url.includes("/log-all") ? 'btn-primary' : 'btn-secondary'%>">All Log</a>
+    </li>
+</ul>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">IP</th>
+            <th scope="col">METHOD</th>
+            <th scope="col">URL</th>
+            <th scope="col">STATUS</th>
+            <th scope="col">RESPONSE TIME</th>
+            <th scope="col">TOTAL TIME</th>
+            <th scope="col">USER AGENT</th>
+            <th scope="col">HTTP VERSION</th>
+            <th scope="col">DATE</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% logAccesses.forEach((log, index) => { %>
+        <tr>
+            <th scope="row"><%= index %></th>
+            <td><%= log.ip %></td>
+            <td><%= log.method %></td>
+            <td><%= log.url %></td>
+            <td><%= log.status %></td>
+            <td><%= log.responseTime %></td>
+            <td><%= log.totalTime %></td>
+            <td><%= log.userAgent %></td>
+            <td><%= log.httpVersion %></td>
+            <td><%= log.date %></td>
+        </tr>
+        <% }) %>
+    </tbody>
+</table>
