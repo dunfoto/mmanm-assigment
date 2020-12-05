@@ -106,3 +106,8 @@
 ::1 Sat, 05 Dec 2020 10:52:58 GMT POST /users/login 302 HTTP/1.1 64 - 215.562ms ms ::1  Mozilla/5.0 (Macintosh; Intel Mac OS X 11_0_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36
 ::1 Sat, 05 Dec 2020 10:52:59 GMT GET /dashboard  HTTP/1.1  - undefinedms ms ::1  Mozilla/5.0 (Macintosh; Intel Mac OS X 11_0_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36
 ::1 Sat, 05 Dec 2020 10:52:59 GMT GET /dashboard 200 HTTP/1.1 3094 - 383.794ms ms ::1  Mozilla/5.0 (Macintosh; Intel Mac OS X 11_0_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36
+::1 Sat, 05 Dec 2020 11:01:19 GMT GET /dashboard 302 HTTP/1.1 68 - 5.482ms ms ::1  Mozilla/5.0 (Macintosh; Intel Mac OS X 11_0_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36
+::1 Sat, 05 Dec 2020 11:01:19 GMT GET /users/login 200 HTTP/1.1 2946 - 11.056ms ms ::1  Mozilla/5.0 (Macintosh; Intel Mac OS X 11_0_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36
+::1 Sat, 05 Dec 2020 11:01:23 GMT POST /users/login 302 HTTP/1.1 64 - 224.529ms ms ::1  Mozilla/5.0 (Macintosh; Intel Mac OS X 11_0_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36
+::1 Sat, 05 Dec 2020 11:01:23 GMT GET /dashboard  HTTP/1.1  - undefinedms ms ::1  Mozilla/5.0 (Macintosh; Intel Mac OS X 11_0_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36
+::1 Sat, 05 Dec 2020 11:01:23 GMT GET /dashboard 200 HTTP/1.1 3094 - 431.590ms ms ::1  Mozilla/5.0 (Macintosh; Intel Mac OS X 11_0_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36
