@@ -65,7 +65,7 @@ app.use(logger((tokens, req, res) => {
             remoteAddr: tokens['remote-addr'](req, res),
             remoteUser: tokens['remote-user'](req, res),
             date: tokens.date(req, res),
-            user: user?._id
+            user: user && user._id ? user._id : null
         }
     LogAccess.insertMany([data], (err, result) => {
     })
